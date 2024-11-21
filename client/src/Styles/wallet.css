@@ -1,0 +1,125 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main Wallet Container */
+  .wallet-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header */
+  .wallet-container h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Wallet Balance Section */
+  .wallet-balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .wallet-balance .balance-title {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .wallet-balance .balance-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4caf50; /* Green for balance */
+  }
+  
+  /* Add Funds Section */
+  .add-funds {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .add-funds input {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .add-funds button {
+    padding: 12px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-funds button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Transaction History Section */
+  .transaction-history {
+    margin-top: 20px;
+  }
+  
+  .transaction-history h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .transaction-history ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .transaction-history li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transaction-history li span {
+    font-size: 1rem;
+  }
+  
+  .transaction-history .transaction-date {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  .transaction-history .transaction-amount {
+    font-weight: bold;
+    color: #d32f2f; /* Red for negative values (payment) */
+  }
+  
+  .transaction-history .transaction-credit {
+    color: #4caf50; /* Green for credits (add funds) */
+  }
+  
